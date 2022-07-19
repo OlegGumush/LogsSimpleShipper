@@ -13,7 +13,7 @@ public class LogWriter {
     @Autowired
     private LogService logService;
 
-    @Scheduled(fixedDelay = 100)
+    @Scheduled(fixedDelay = 10)
     public void scheduleFixedDelayTask() throws InterruptedException {
 
         LocalDateTime time = LocalDateTime.now();
